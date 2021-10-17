@@ -26,7 +26,6 @@ namespace FlatToComplex
 
     public class Employee
     {
-
         public string Name { get; set; }
         public int Salary { get; set; }
         public string Department { get; set; }
@@ -34,7 +33,6 @@ namespace FlatToComplex
         public string City { get; set; }
         public string State { get; set; }
         public string Country { get; set; }
-
 
         //This makes the Employee object transform when serialized
         [JsonProperty("address")]
@@ -45,7 +43,6 @@ namespace FlatToComplex
         {
             address = new Address { City = this.City, State = this.State, Country = this.Country };
         }
-
     }
 
     public class EmployeeDTO
