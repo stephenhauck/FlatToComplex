@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.11
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlatToComplex", "FlatToComplex\FlatToComplex.csproj", "{928B7533-3813-4E4A-ABB1-8BA3942281CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{928B7533-3813-4E4A-ABB1-8BA3942281CA}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{928B7533-3813-4E4A-ABB1-8BA3942281CA}.Debug|anycpu.Build.0 = Debug|anycpu
+		{928B7533-3813-4E4A-ABB1-8BA3942281CA}.Release|anycpu.ActiveCfg = Release|anycpu
+		{928B7533-3813-4E4A-ABB1-8BA3942281CA}.Release|anycpu.Build.0 = Release|anycpu
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC96DCA4-CCCF-46F6-A6E4-4AFF28A1F69A}
+	EndGlobalSection
+EndGlobal
