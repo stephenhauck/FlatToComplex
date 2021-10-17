@@ -18,7 +18,7 @@ namespace FlatToComplex
                 Country = "United States"
             };
 
-            //Serialize object
+            //Make the object with the complex address element from the flat object
             var employeeDTOTest = JsonConvert.DeserializeObject<EmployeeDTO>(JsonConvert.SerializeObject(employee));
 
         }
