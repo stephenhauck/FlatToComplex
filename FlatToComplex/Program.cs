@@ -18,9 +18,22 @@ namespace FlatToComplex
                 Country = "United States"
             };
 
+            var employeeNoAnnotation = new EmployeeNoAnnotation()
+            {
+                Name = "Bob Jones",
+                Salary = 2000,
+                Department = "Human resources",
+                City = "San Diego",
+                State = "CA",
+                Country = "United States"
+            };
+
             //Make the object with the complex address element from the flat object
             var employeeDTOTest = JsonConvert.DeserializeObject<EmployeeDTO>(JsonConvert.SerializeObject(employee));
 
+            //Thi works too without the need for the [OnSerializing] annotation
+            var employeeDTOTest2 = JsonConvert.DeserializeObject<EmployeeDTO>(JsonConvert.SerializeObject(employeeNoAnnotation));
+            employeeDTOTest2.address = JsonConvert.DeserializeObject<Address>(JsonConvert.SerializeObject(employeeNoAnnotation));
         }
     }
 
@@ -43,6 +56,18 @@ namespace FlatToComplex
         {
             address = new Address { City = this.City, State = this.State, Country = this.Country };
         }
+    }
+
+    public class EmployeeNoAnnotation
+    {
+        public string Name { get; set; }
+        public int Salary { get; set; }
+        public string Department { get; set; }
+        //properties in the Address object
+        public string City { get; set; }
+        public string State { get; set; }
+        public string Country { get; set; }
+
     }
 
     public class EmployeeDTO
